@@ -3,7 +3,7 @@
     <p>Os Vingadores (Avengers no original em inglês) são um grupo de super-heróis de história em quadrinhos publicados nos Estados Unidos pela editora Marvel Comics. O grupo também aparece em adaptações da Marvel para cinema, desenho animado e videogames. (Wikipedia)</p>
     <p>Alguns membros da formação atual (clique para ver detalhes):</p>
     <div>
-        <app-heroi *ngFor="let vingador of vingadores" [heroi]="vingador" [estahSelecionado]="selecionado && vingador.id == selecionado.id" (onSelecionado)="heroiSelecionado($event)"></app-heroi>
+        <app-lista-de-herois [vingadores]="vingadores"></app-lista-de-herois>
     </div>
 
     <div *ngIf="selecionado">

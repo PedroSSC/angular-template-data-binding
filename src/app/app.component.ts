@@ -9,8 +9,8 @@ import '../assets/css/style.css';
 })
 export class AppComponent implements OnInit {
     title: string;
-    vingadores: Array<Vingador>;
     selecionado: Vingador;
+    vingadores: Array<Vingador>;
 
     constructor() {
         this.title = 'Vingadores';
@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
     }
 
-    heroiSelecionado(vingador: Vingador): void {
-        this.selecionado = vingador;
-    }
+heroisSelecionado(vingador: Vingador): void{
+    this.selecionado = vingador;
+  }
 }
